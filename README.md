@@ -129,12 +129,6 @@ Standing charge (separate endpoint) is fetched for the footer line on Now/Next t
 
 ---
 
-## GitHub
-
-See **[GIT.md](GIT.md)** for first-time push, what never to commit, and clone/setup on a new machine.
-
----
-
 ## Licence
 
 Firmware and Python app: use and modify freely. Third-party libraries (LVGL, XPowersLib, Waveshare BSP) remain under their own licences — install via the scripts rather than vendoring in git.
