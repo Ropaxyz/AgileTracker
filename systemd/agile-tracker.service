@@ -1,0 +1,15 @@
+[Unit]
+Description=Octopus Agile e-ink rate tracker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/agile-tracker
+ExecStart=/home/pi/agile-tracker/.venv/bin/python /home/pi/agile-tracker/main.py
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

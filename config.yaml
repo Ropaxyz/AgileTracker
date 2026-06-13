@@ -1,0 +1,20 @@
+# Octopus Agile tracker — KA19 8AY / Southern Scotland
+product_code: AGILE-24-10-01
+region: N
+postcode: KA198AY
+
+# Waveshare 2.13" e-Paper: try V4 first, then V2 (rev 2.1 board works with both drivers)
+epd_driver: V4
+
+# Refresh: fetch rates every N seconds; rotate screens every N seconds
+rate_poll_seconds: 900
+screen_rotate_seconds: 30
+
+# Full e-ink refresh every N partial updates (reduces ghosting)
+full_refresh_every: 10
+
+# Screens to cycle: now, today, tomorrow
+screens:
+  - now
+  - today
+  - tomorrow
