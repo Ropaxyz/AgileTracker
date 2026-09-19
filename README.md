@@ -1,6 +1,6 @@
 # Octopus Agile tracker
 
-Live **Octopus Agile** electricity rates on a small display — built for **Southern Scotland (N)** / tariff `AGILE-24-10-01`.
+Live **Octopus Agile** electricity rates on a small display - built for **Southern Scotland (N)** / tariff `AGILE-24-10-01`.
 
 Two targets:
 
@@ -11,20 +11,20 @@ Two targets:
 
 Data comes from the public Octopus API (no API key needed for rates).
 
-![Agile tracker on ESP32-C6 AMOLED — Now tab showing current rate, next slot, and day stats](docs/device.jpeg)
+![Agile tracker on ESP32-C6 AMOLED - Now tab showing current rate, next slot, and day stats](docs/device.jpeg)
 
-*Waveshare ESP32-C6-Touch-AMOLED-2.16 — Now tab at 17.8p, next 19.9p from 20:00.*
+*Waveshare ESP32-C6-Touch-AMOLED-2.16 - Now tab at 17.8p, next 19.9p from 20:00.*
 
 ---
 
-## ESP32 — Waveshare ESP32-C6-Touch-AMOLED-2.16
+## ESP32 - Waveshare ESP32-C6-Touch-AMOLED-2.16
 
 ### Features
 
-- **Now** — current rate, next slot, run score (RUN NOW / GOOD / OK / WAIT), stats
-- **Today** — colour bar chart (48 half-hour slots), time axis, cheap/avg/peak key
-- **Next** — tomorrow min/max, best 2h window, cheapest slots, peak
-- **Set** — brightness slider, auto night dim (22:00 → 06:30), device info
+- **Now** - current rate, next slot, run score (RUN NOW / GOOD / OK / WAIT), stats
+- **Today** - colour bar chart (48 half-hour slots), time axis, cheap/avg/peak key
+- **Next** - tomorrow min/max, best 2h window, cheapest slots, peak
+- **Set** - brightness slider, auto night dim (22:00 → 06:30), device info
 - Swipe between tabs; auto-refresh every 15 minutes
 - Hold **KEY** to cycle display rotation (all four sides)
 - Hold **BOOT** for next tab; KEY/BOOT short-press brighter/dimmer
@@ -52,8 +52,8 @@ Edit `esp32/Agile_Tracker/agile_config.h` (`AGILE_REGION`, `AGILE_TARIFF_CODE`, 
 | Display blank | Run Waveshare `09_LVGL_V9_Test` first; check USB power |
 | WiFi fails | Check `secrets.h`; ESP32-C6 needs 2.4 GHz WiFi |
 | Font/build errors | Re-run `install-arduino-libraries.ps1`; restart IDE |
-| Tomorrow empty before 4pm | Normal — day-ahead publishes ~4pm UK |
-| Touch wrong in portrait | Report which rotation — touch mapping may need a tweak |
+| Tomorrow empty before 4pm | Normal - day-ahead publishes ~4pm UK |
+| Touch wrong in portrait | Report which rotation - touch mapping may need a tweak |
 
 ---
 
@@ -79,7 +79,7 @@ tracker/
 │   ├── bsp_*.cpp/h          # display, buttons, orientation
 │   ├── src/                 # Waveshare BSP (LCD, PMIC, IMU)
 │   ├── secrets.h.example    # copy to secrets.h (gitignored)
-│   └── libraries/           # installed by script — not in git
+│   └── libraries/           # installed by script - not in git
 ├── tracker/                 # Python e-ink app modules
 ├── scripts/                 # install + cleanup scripts
 ├── docs/                    # Photos / screenshots for README
@@ -100,8 +100,8 @@ tracker/
 | `_waveshare_ref/` | Cloned Waveshare repo (install source) |
 | `esp32/Agile_Tracker/libraries/lvgl/` | Large LVGL tree |
 | `esp32/Agile_Tracker/libraries/XPowersLib/` | PMIC library |
-| `esp32/Agile_Tracker/libraries/ArduinoJson/` | Unused leftover — not required |
-| `tracker/lvgl8/`, `tracker/lvgl9/` | Duplicate LVGL — not used |
+| `esp32/Agile_Tracker/libraries/ArduinoJson/` | Unused leftover - not required |
+| `tracker/lvgl8/`, `tracker/lvgl9/` | Duplicate LVGL - not used |
 | `preview/` | Generated PNG previews |
 | `.venv/`, `__pycache__/` | Python cache |
 
@@ -131,4 +131,4 @@ Standing charge (separate endpoint) is fetched for the footer line on Now/Next t
 
 ## Licence
 
-Firmware and Python app: use and modify freely. Third-party libraries (LVGL, XPowersLib, Waveshare BSP) remain under their own licences — install via the scripts rather than vendoring in git.
+Firmware and Python app: use and modify freely. Third-party libraries (LVGL, XPowersLib, Waveshare BSP) remain under their own licences - install via the scripts rather than vendoring in git.

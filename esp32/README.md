@@ -19,7 +19,7 @@ Open `Agile_Tracker/Agile_Tracker.ino` in Arduino IDE.
 - arduino-esp32: **v3.3.0+**
 - Serial monitor: **115200**
 
-Do **not** install generic LVGL or ArduinoJson from Library Manager — the install script provides everything needed.
+Do **not** install generic LVGL or ArduinoJson from Library Manager - the install script provides everything needed.
 
 ## Tabs
 
