@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------------------
+# Local-only inputs and build artifacts. These are the folders listed under
+# "Safe to delete locally" in README.md - the install scripts recreate them.
+# ---------------------------------------------------------------------------
+
+# WiFi credentials (copy secrets.h.example -> secrets.h)
+secrets.h
+
+# Arduino sketchbook and third-party libraries installed by the scripts.
+# libraries/README.md is the only file in that folder that belongs in git.
+.arduino/
+.arduino15/
+esp32/Agile_Tracker/libraries/*
+!esp32/Agile_Tracker/libraries/README.md
+
+# Cloned Waveshare reference repo
+_waveshare_ref/
+
+# Firmware build output
+build/
+*.bin
+*.elf
+*.map
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+preview/
+tracker/lvgl8/
+tracker/lvgl9/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~

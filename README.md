@@ -72,14 +72,14 @@ Pi install: `scripts/install-pi.sh`. Set `epd_driver: V4` or `V2` in `config.yam
 ## Repo layout
 
 ```
-tracker/
+AgileTracker/
 ├── esp32/Agile_Tracker/     # ESP32 firmware (your main project)
 │   ├── Agile_Tracker.ino
 │   ├── agile_*.cpp/h        # API, store, UI
 │   ├── bsp_*.cpp/h          # display, buttons, orientation
 │   ├── src/                 # Waveshare BSP (LCD, PMIC, IMU)
 │   ├── secrets.h.example    # copy to secrets.h (gitignored)
-│   └── libraries/           # installed by script - not in git
+│   └── libraries/           # installed by script (only README.md is tracked)
 ├── tracker/                 # Python e-ink app modules
 ├── scripts/                 # install + cleanup scripts
 ├── docs/                    # Photos / screenshots for README
