@@ -88,8 +88,7 @@ AgileTracker/
 ├── config.yaml
 ├── requirements.txt
 ├── systemd/                 # Pi service unit
-├── README.md
-└── GIT.md                   # how to push to GitHub
+└── README.md
 ```
 
 ### Safe to delete locally (reinstalled by scripts)
